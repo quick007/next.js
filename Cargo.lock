@@ -321,7 +321,7 @@ dependencies = [
 [[package]]
 name = "auto-hash-map"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "serde",
  "smallvec",
@@ -398,12 +398,6 @@ dependencies = [
  "object",
  "rustc-demangle",
 ]
-
-[[package]]
-name = "base16"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d27c3610c36aee21ce8ac510e6224498de4228ad772a171ed65643a24693a5a8"
 
 [[package]]
 name = "base64"
@@ -2659,9 +2653,9 @@ dependencies = [
 
 [[package]]
 name = "lightningcss"
-version = "1.0.0-alpha.56"
+version = "1.0.0-alpha.57"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "668e9f1774a4dda9e2233ad0f78c6987878bcf4201d2085bc3517a7f84d0ee92"
+checksum = "10bc10261f46b8df263b80e7779d1748b1880488cd951fbb9e096430cead10e6"
 dependencies = [
  "ahash 0.8.9",
  "bitflags 2.5.0",
@@ -2671,7 +2665,6 @@ dependencies = [
  "dashmap",
  "data-encoding",
  "getrandom",
- "indexmap 2.2.6",
  "itertools 0.10.5",
  "lazy_static",
  "lightningcss-derive",
@@ -3203,7 +3196,7 @@ dependencies = [
  "next-build",
  "next-core",
  "next-custom-transforms",
- "rand",
+ "rand 0.8.5",
  "serde",
  "serde_json",
  "shadow-rs",
@@ -3220,7 +3213,7 @@ dependencies = [
 [[package]]
 name = "node-file-trace"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "serde",
@@ -5207,9 +5200,9 @@ dependencies = [
 
 [[package]]
 name = "styled_jsx"
-version = "0.73.21"
+version = "0.73.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "17e38b2334f6613c9e811cc776bc9d2329c288f4dc125df68615fe6cf19b48ae"
+checksum = "c05e5aea6dec71fcebfe01fc22139bda1a9a31feff17c219b1e2cee6ce815060"
 dependencies = [
  "anyhow",
  "lightningcss",
@@ -5467,9 +5460,9 @@ dependencies = [
 
 [[package]]
 name = "swc_core"
-version = "0.92.5"
+version = "0.92.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e317f6f8b15019358d1e48631c0e6d098d9a3d00d666ea99650201661abea855"
+checksum = "47a2aad0d9bede023181f50d63de80f20634f0c612a883cbb3f27f99da3d8d3d"
 dependencies = [
  "binding_macros",
  "swc",
@@ -6524,9 +6517,9 @@ dependencies = [
 
 [[package]]
 name = "swc_relay"
-version = "0.44.13"
+version = "0.44.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b36a22861087d88f0ae4d78800b6fd44e2dc5b541f8da53e81388c611bab0ef9"
+checksum = "14a596e01319abf55b8a8c7e36a82aa0d1ac01a18a99ce9b07a7fbcbfd544466"
 dependencies = [
  "once_cell",
  "regex",
@@ -6724,9 +6717,9 @@ dependencies = [
 
 [[package]]
 name = "testing"
-version = "0.35.24"
+version = "0.35.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c71dd5265f4921fe51b386b1496c63ac058589d8cd38de6b61489a98c6019a16"
+checksum = "15028f8ec7f95006f4e00e6c5ab6620f322bc6dc208a6cba09afa36375981cec"
 dependencies = [
  "ansi_term",
  "cargo_metadata",
@@ -7146,7 +7139,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -7178,7 +7171,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-build"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "cargo-lock",
@@ -7190,7 +7183,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-bytes"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "bytes",
@@ -7204,7 +7197,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-env"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "dotenvs",
@@ -7218,7 +7211,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-fetch"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "lazy_static",
@@ -7234,7 +7227,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-fs"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "auto-hash-map",
@@ -7266,10 +7259,8 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-hash"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
- "base16",
- "hex",
  "md4",
  "turbo-tasks-macros",
  "twox-hash",
@@ -7278,7 +7269,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-macros"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "proc-macro-error",
@@ -7292,7 +7283,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-macros-shared"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -7302,7 +7293,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-malloc"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "mimalloc",
 ]
@@ -7310,7 +7301,7 @@ dependencies = [
 [[package]]
 name = "turbo-tasks-memory"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "auto-hash-map",
@@ -7336,7 +7327,7 @@ dependencies = [
 [[package]]
 name = "turbopack"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-recursion",
@@ -7366,7 +7357,7 @@ dependencies = [
 [[package]]
 name = "turbopack-binding"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "auto-hash-map",
  "mdxjs",
@@ -7407,7 +7398,7 @@ dependencies = [
 [[package]]
 name = "turbopack-browser"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
@@ -7430,7 +7421,7 @@ dependencies = [
 [[package]]
 name = "turbopack-cli-utils"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "clap",
@@ -7447,7 +7438,7 @@ dependencies = [
 [[package]]
 name = "turbopack-core"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-recursion",
@@ -7476,7 +7467,7 @@ dependencies = [
 [[package]]
 name = "turbopack-css"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
@@ -7503,7 +7494,7 @@ dependencies = [
 [[package]]
 name = "turbopack-dev-server"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-compression",
@@ -7539,7 +7530,7 @@ dependencies = [
 [[package]]
 name = "turbopack-ecmascript"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -7574,7 +7565,7 @@ dependencies = [
 [[package]]
 name = "turbopack-ecmascript-hmr-protocol"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "serde",
  "serde_json",
@@ -7585,7 +7576,7 @@ dependencies = [
 [[package]]
 name = "turbopack-ecmascript-plugins"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -7609,7 +7600,7 @@ dependencies = [
 [[package]]
 name = "turbopack-ecmascript-runtime"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indoc",
@@ -7625,7 +7616,7 @@ dependencies = [
 [[package]]
 name = "turbopack-env"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
@@ -7641,7 +7632,7 @@ dependencies = [
 [[package]]
 name = "turbopack-image"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "base64 0.21.4",
@@ -7660,7 +7651,7 @@ dependencies = [
 [[package]]
 name = "turbopack-json"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "serde",
@@ -7675,7 +7666,7 @@ dependencies = [
 [[package]]
 name = "turbopack-mdx"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "mdxjs",
@@ -7690,7 +7681,7 @@ dependencies = [
 [[package]]
 name = "turbopack-node"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -7724,7 +7715,7 @@ dependencies = [
 [[package]]
 name = "turbopack-nodejs"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
@@ -7744,7 +7735,7 @@ dependencies = [
 [[package]]
 name = "turbopack-resolve"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
@@ -7762,7 +7753,7 @@ dependencies = [
 [[package]]
 name = "turbopack-static"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "serde",
@@ -7778,7 +7769,7 @@ dependencies = [
 [[package]]
 name = "turbopack-swc-utils"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "swc_core",
  "turbo-tasks",
@@ -7789,7 +7780,7 @@ dependencies = [
 [[package]]
 name = "turbopack-trace-server"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "either",
@@ -7809,7 +7800,7 @@ dependencies = [
 [[package]]
 name = "turbopack-trace-utils"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "crossbeam-channel",
@@ -7825,7 +7816,7 @@ dependencies = [
 [[package]]
 name = "turbopack-wasm"
 version = "0.1.0"
-source = "git+https://github.com/vercel/turbo.git?tag=turbopack-240521.2#2af6b12b3dc142316a2ba882ea5332c9a847f2a4"
+source = "git+https://github.com/vercel/turbo.git?branch=hrmny/pack-2622-cache-external-modules-during-evaluation#d72e70d05320515db06f398994e497445df153e7"
 dependencies = [
  "anyhow",
  "indexmap 1.9.3",
