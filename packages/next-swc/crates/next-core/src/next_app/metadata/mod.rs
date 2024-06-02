@@ -41,7 +41,7 @@ pub struct MetadataFileMatch<'a> {
 
 fn match_numbered_metadata(stem: &str) -> Option<(&str, &str)> {
     let (_whole, stem, number, _is_multi_dynamic) = lazy_regex::regex_captures!(
-        "^(icon|apple-icon|opengraph-image|twitter-image|sitemap)(\\d)(\\[\\])",
+        "^(icon|apple-icon|opengraph-image|twitter-image|sitemap)(\\d+)(\\[\\])$",
         stem
     )?;
 
@@ -327,14 +327,13 @@ pub fn normalize_metadata_route(mut page: AppPage) -> Result<AppPage> {
     if !route.ends_with("/route") {
         let (base_name, ext) = split_extension(&route);
         let is_multi_dynamic = base_name.ends_with("[]");
-        let normalized_base_name = is_multi_dynamic
-            .then(|| &base_name[..base_name.len() - 2])
-            .unwrap_or(base_name);
+        let base_name = base_name.strip_suffix("[]").unwrap_or(base_name);
+
         page.0.pop();
 
         page.push(PageSegment::Static(format!(
             "{}{}{}",
-            normalized_base_name,
+            base_name,
             suffix
                 .map(|suffix| format!("-{suffix}"))
                 .unwrap_or_default(),
